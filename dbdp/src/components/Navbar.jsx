@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {ReactComponent as ReactLogo} from '../assets/logo.svg'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
     <div className="w-full h-[90px] bg-black">
         <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
             <div>
-                <h1 className="text-[#00d8ff]">dbdp</h1>
+                <ReactLogo className="w-[100px]"/>
             </div>
             <div className="hidden md:flex">
                 <ul className="flex text-white items-center">

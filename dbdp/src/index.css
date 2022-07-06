@@ -9,7 +9,6 @@
     --primary-purple: #6a00ff;
 }
 
-
 @layer base {
     * {
         @apply font-[Kanit]
