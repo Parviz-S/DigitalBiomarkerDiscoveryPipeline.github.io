@@ -8,12 +8,12 @@ const Navbar = () => {
                 <h1 className="text-[#00d8ff]">dbdp</h1>
             </div>
             <div>
-                <ul className="flex text-white">
+                <ul className="flex text-white items-center">
                     <li>Github</li>
                     <li>Twitter</li>
                     <li>Blog</li>
                     <li>dbdpED</li>
-                    <button>Open dbdp</button>  
+                    <button className="ml-4">Open dbdp</button>  
                 </ul>
             </div>
         </div>
