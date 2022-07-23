@@ -16,10 +16,10 @@ const Navbar = () => {
             </div>
             <div className="hidden md:flex">
                 <ul className="flex text-white items-center">
-                    <li>Github</li>
-                    <li>Twitter</li>
-                    <li>Blog</li>
-                    <li>dbdpED</li>
+                    <li><a href="github.com" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Github</a></li>
+                    <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Twitter</a></li>                                                        
+                    <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a></li>                                                        
+                    <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dbdpED</a></li>
                     <button className="ml-4">Open dbdp</button>  
                 </ul>
             </div>
