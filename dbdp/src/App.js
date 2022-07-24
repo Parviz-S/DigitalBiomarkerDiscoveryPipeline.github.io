@@ -8,6 +8,7 @@ import DhdrCard from './components/DhdrCard';
 import DocumentationSection from './components/DocumentationSection';
 import ResourceGuide from './components/ResourceGuide';
 import ReadyToDiscover from './components/ReadyToDiscover';
+import OurTeam from './components/OurTeam';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <DocumentationSection />
         <ResourceGuide />
         <ReadyToDiscover />
+        <OurTeam />
     </div>
   );
 }
