@@ -9,6 +9,7 @@ import DocumentationSection from './components/DocumentationSection';
 import ResourceGuide from './components/ResourceGuide';
 import ReadyToDiscover from './components/ReadyToDiscover';
 import OurTeam from './components/OurTeam';
+import Contributors from './components/Contributors';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <ResourceGuide />
         <ReadyToDiscover />
         <OurTeam />
+        <Contributors />
     </div>
   );
 }

@@ -18,28 +18,28 @@ const TeamCard = (props) => {
         <ul className='flex justify-center mt-4'>
             
             {(props.twitter ? 
-                <li>
+                <li className='p-2'>
                     <a href={props.twitter} className='text-gray-400'>
                         <IoLogoTwitter size={20}/>
                     </a>
                 </li> : null
             )}
             {(props.linkedin ? 
-                <li>
+                <li className='p-2'>
                     <a href={props.linkedin} className='text-gray-400'>
                         <IoLogoLinkedin size={20}/>
                     </a>
                 </li> : null
             )}
             {(props.medium ? 
-                <li>
+                <li className='p-2'>
                     <a href={props.medium} className='text-gray-400'>
                         <BsMedium size={20}/>
                     </a>
                 </li> : null
             )}
             {(props.github ? 
-                <li>
+                <li className='p-2'>
                     <a href={props.github} className='text-gray-400'>
                         <IoLogoGithub size={20}/>
                     </a>
