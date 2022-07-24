@@ -7,6 +7,7 @@ import Purpose from './components/Purpose';
 import DhdrCard from './components/DhdrCard';
 import DocumentationSection from './components/DocumentationSection';
 import ResourceGuide from './components/ResourceGuide';
+import ReadyToDiscover from './components/ReadyToDiscover';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <DhdrCard />
         <DocumentationSection />
         <ResourceGuide />
+        <ReadyToDiscover />
     </div>
   );
 }

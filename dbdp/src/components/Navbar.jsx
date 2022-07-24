@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Twitter</a></li>                                                        
                     <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a></li>                                                        
                     <li><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dbdpED</a></li>
-                    <button className="ml-4">Open dbdp</button>  
+                    <button className="ml-4 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Open dbdp</button>  
                 </ul>
             </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li className="text-2xl">Twitter</li>
                     <li className="text-2xl">Blog</li>
                     <li className="text-2xl">dbdpED</li>
-                    <button className="m-8">Open dbdp</button>
+                    <button className="bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl m-8">Open dbdp</button>
                 </ul>
             </div>
         </div>
