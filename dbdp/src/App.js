@@ -10,6 +10,7 @@ import ResourceGuide from './components/ResourceGuide';
 import ReadyToDiscover from './components/ReadyToDiscover';
 import OurTeam from './components/OurTeam';
 import Contributors from './components/Contributors';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <ReadyToDiscover />
         <OurTeam />
         <Contributors />
+        <Footer />
     </div>
   );
 }
