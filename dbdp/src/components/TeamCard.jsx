@@ -24,21 +24,21 @@ const TeamCard = (props) => {
                     </a>
                 </li> : null
             )}
-            {(props.twitter ? 
+            {(props.linkedin ? 
                 <li>
                     <a href={props.linkedin} className='text-gray-400'>
                         <IoLogoLinkedin size={20}/>
                     </a>
                 </li> : null
             )}
-            {(props.twitter ? 
+            {(props.medium ? 
                 <li>
                     <a href={props.medium} className='text-gray-400'>
                         <BsMedium size={20}/>
                     </a>
                 </li> : null
             )}
-            {(props.twitter ? 
+            {(props.github ? 
                 <li>
                     <a href={props.github} className='text-gray-400'>
                         <IoLogoGithub size={20}/>
