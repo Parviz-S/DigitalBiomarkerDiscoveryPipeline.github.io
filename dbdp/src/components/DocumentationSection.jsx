@@ -12,7 +12,7 @@ const DocumentationSection = () => {
     <div className="bg-black text-white text-center">
         <div className="max-w-[1240px] mx-auto px-4 py-16 ">
             <h1 className="py-4">Extensive Documentation</h1>
-            <p1 className="py-4 text-xl">The DBDP provides extensive user documentation including a User Guide, instructions and documentation for contributors, and monitored issue tracking.</p1>
+            <p className="py-4 text-xl">The DBDP provides extensive user documentation including a User Guide, instructions and documentation for contributors, and monitored issue tracking.</p>
 
             {/* Card container */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">

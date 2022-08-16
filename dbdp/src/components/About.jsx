@@ -10,7 +10,7 @@ const About = () => {
     <div className="bg-black text-white text-center">
         <div className="max-w-[1240px] mx-auto px-4 py-16 ">
             <h1 className="py-4">What is DBDP?</h1>
-            <p1 className="py-4 text-xl">The Digital Biomarker Discovery Pipeline (DBDP) is an open source platform for the development of digital biomarkers.</p1>
+            <p className="py-4 text-xl">The Digital Biomarker Discovery Pipeline (DBDP) is an open source platform for the development of digital biomarkers.</p>
 
             {/* Card container */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
