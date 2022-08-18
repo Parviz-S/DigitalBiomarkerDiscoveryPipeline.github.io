@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'lodash'
 import { useEffect, useState } from 'react'
 
 import { IoIosSearch } from 'react-icons/io'
@@ -7,9 +8,12 @@ import ModulesContributors from './ModulesContributors';
 
 const Modules = () => {
 
+    const pageSize = 10;
 
     const [modules, setModules] = useState([]);
     const [search, setSearch] = useState("");
+    const [paginatedModules, setPaginatedModules] = useState();
+    const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
         fetch("https://api.github.com/orgs/DigitalBiomarkerDiscoveryPipeline/repos")
@@ -17,12 +21,24 @@ const Modules = () => {
         .then(
             (result) => {
                 setModules(result)
+                setPaginatedModules(_(result).slice(0).take(pageSize).value())
             },
             (error) => {
                 console.log(error);
             }
         )
     }, [])
+
+    const pageCount = modules ? Math.ceil(modules.length/pageSize) :0;
+    if (pageCount === 1) return null;
+    const pages = _.range(1, pageCount+1);
+
+    const pagination=(pageNo)=>{
+        setCurrentPage(pageNo);
+        const startIndex = (pageNo - 1) * pageSize;
+        const paginatedModule = _(modules).slice(startIndex).take(pageSize).value();
+        setPaginatedModules(paginatedModule);
+    }
 
   return (
     <>
@@ -55,7 +71,7 @@ const Modules = () => {
                         ) : (
                             <tbody>
                                 
-                                {modules.filter(name => name.name.toLowerCase().includes(search.toLowerCase()) || name.topics[0].toLowerCase().includes(search.toLowerCase())).map((module, i) => (
+                                {paginatedModules.filter(name => name.name.toLowerCase().includes(search.toLowerCase()) || name.topics[0].toLowerCase().includes(search.toLowerCase())).map((module, i) => (
 
                                     <tr key={i} className="bg-gray-800 border-b border-gray-700 hover:bg-gray-600 text-gray-400">
                                         <td className="py-4 px-6 font-medium text-white whitespace-nowrap">
@@ -101,7 +117,32 @@ const Modules = () => {
                     
                         
                     <div className=" text-gray-400 bg-gray-800 border-b border-gray-700  rounded-b-lg text-center">
-                        Pagination >>>
+                        <nav class="m-2 relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            <a href="#" className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <span class="sr-only">Previous</span>
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            </a>
+
+                            {
+                                pages.map((page)=>(
+                                    <li onClick={()=>pagination(page)} aria-current="page" className={
+                                        page === currentPage ? "active z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium" : "bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+                                    }> {page} </li>
+                                ))
+                            }
+                            
+                            
+
+
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <span class="sr-only">Next</span>
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </div>
