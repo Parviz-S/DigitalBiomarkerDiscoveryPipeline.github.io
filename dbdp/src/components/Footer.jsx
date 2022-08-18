@@ -8,7 +8,7 @@ import openmhealth from '../assets/openmhealth.png'
 const Footer = () => {
   return (
     <div className="w-full text-white bg-black">
-        <div className="px-4 py-16">
+        <div className="px-4 pt-16">
         <div className='flex justify-center py-16'>
             <img src={bil} alt='bil logo'></img>
         </div>
@@ -19,11 +19,18 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col justify-between mx-auto">
-                <div className='mb-8'><img className="max-w-[200px]" src={md2k} alt='md2k logo'></img></div>
-                <div className='mb-8'><img className="max-w-[200px]" src={czi} alt='czi logo'></img></div>
-                <div className='mb-8'><img className="max-w-[200px]" src={openmhealth} alt='openmhealth logo'></img></div>
+                <div className='mb-8'><a href='https://md2k.org/'><img className="max-w-[200px]" src={md2k} alt='md2k logo'></img></a></div>
+                <div className='mb-8'><a href='https://chanzuckerberg.com/eoss/proposals/expanding-the-open-mhealth-platform-to-support-digital-biomarker-discovery/'><img className="max-w-[200px]" src={czi} alt='czi logo'></img></a></div>
+                <div className='mb-8'><a href='https://openmhealth.org/'><img className="max-w-[200px]" src={openmhealth} alt='openmhealth logo'></img></a></div>
             </div>
+
         </div>
+
+
+        <div className='text-center py-4 text-sm opacity-70'>
+            <p>&copy; 2022, developed by <a href="dunn.pratt.duke.edu/" target="_blank" className='text-[#00d8ff]'>The Big Ideas Lab</a> at Duke University.</p> 
+        </div>
+
         </div>
     </div>
   )
