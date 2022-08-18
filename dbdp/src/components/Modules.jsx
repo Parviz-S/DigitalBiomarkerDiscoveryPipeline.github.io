@@ -55,7 +55,7 @@ const Modules = () => {
                         ) : (
                             <tbody>
                                 
-                                {modules.filter(name => name.name.toLowerCase().includes(search.toLowerCase())).map((module, i) => (
+                                {modules.filter(name => name.name.toLowerCase().includes(search.toLowerCase()) || name.topics[0].toLowerCase().includes(search.toLowerCase())).map((module, i) => (
 
                                     <tr key={i} className="bg-gray-800 border-b border-gray-700 hover:bg-gray-600 text-gray-400">
                                         <td className="py-4 px-6 font-medium text-white whitespace-nowrap">
@@ -68,7 +68,7 @@ const Modules = () => {
                                         </td>
                                         <td className="py-4 px-6 font-medium whitespace-nowrap">
                                             <div className="flex">
-                                                <p>{module.topics[0]}</p>
+                                                <p>{module.topics[0].slice(2, module.topics[0].length)}</p>
                                             </div>
                                         </td>
                                         {/* ACTIONS TAB */}

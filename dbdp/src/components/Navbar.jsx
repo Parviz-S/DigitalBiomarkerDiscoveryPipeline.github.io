@@ -16,11 +16,12 @@ const Navbar = () => {
             </div>
             <div className="hidden md:flex">
                 <ul className="flex text-white items-center">
-                    <li className='p-4'><a href="github.com" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Github</a></li>
-                    <li className='p-4'><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Twitter</a></li>                                                        
-                    <li className='p-4'><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a></li>                                                        
-                    <li className='p-4'><a href="twitter.com" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dbdpED</a></li>
-                    <button className="ml-4 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Open dbdp</button>  
+                    {/* bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium # for selected menu item */}
+                    <li className='p-4'><a href="https://github.com/DigitalBiomarkerDiscoveryPipeline" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Github</a></li>
+                    <li className='p-4'><a href="https://twitter.com/TheDBDP" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Twitter</a></li>                                                        
+                    <li className='p-4'><a href="https://medium.com/digital-biomarker-discovery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a></li>                                                        
+                    <li className='p-4'><a href="https://dbdp.org/dbdpED" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dbdpED</a></li>
+                    <a href="https://dbdp.org/opendbdp"> <button className="ml-4 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Open dbdp</button> </a>  
                 </ul>
             </div>
 
