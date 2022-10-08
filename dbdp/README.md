@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Getting Started with DBDP Website
+
+### 1. Open your terminal and then type
+
+`$ git clone {the url to the GitHub repo}`
+
+This clones the repo
+
+### 2. cd into the new folder and type
+
+`$ npm install`
+
+This installs the required dependencies
+
+### 3. To run the React project.
+
+`$ npm start`
+
+
+# More about React Projects
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
