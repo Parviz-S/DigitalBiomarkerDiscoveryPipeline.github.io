@@ -11,22 +11,59 @@ import ReadyToDiscover from './components/ReadyToDiscover';
 import OurTeam from './components/OurTeam';
 import Contributors from './components/Contributors';
 import Footer from './components/Footer';
+import News from './components/News';
+import Contribute from './components/Contribute';
+import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
-    <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Purpose />
-        <Modules /> 
-        <DhdrCard />
-        <DocumentationSection />
-        <ResourceGuide />
-        <ReadyToDiscover />
-        <OurTeam />
-        <Contributors />
-        <Footer />
+    <div className='App'>
+      <Navbar />
+
+      <div className='content'>
+        <Routes>
+          <Route path="/" element={
+          <div className='Home'>
+            <Hero />
+            <About />
+            <DhdrCard />
+            <DocumentationSection />
+            <ResourceGuide />
+            <ReadyToDiscover />
+          </div> 
+        }/>
+
+        <Route path="/about" element={
+          <div className='About'>
+            <Purpose />
+            <OurTeam />             
+            <Contributors />
+          </div>
+        } />
+
+        <Route path="/news" element={
+          <div className='News'>
+            <News /> 
+          </div>
+        } />
+
+        <Route path="/modules" element={
+          <div className='Modules'>
+            <Modules /> 
+          </div>
+        } />
+
+        <Route path="/contribute" element={
+          <div className='Modules'>
+            <Contribute /> 
+          </div>
+        } />
+
+        </Routes>
+      </div>
+
+      <Footer />
     </div>
   );
 }
