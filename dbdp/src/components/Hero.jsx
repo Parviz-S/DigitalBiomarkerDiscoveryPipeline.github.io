@@ -8,10 +8,9 @@ const Hero = () => {
         <video className="object-cover h-full w-full absolute -z-10" src={heroVid} autoPlay loop muted />
         <div className="w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center">
             <h1><span className="text-[#b771f4]">Digital</span> <span className="text-[#1acfc0]">Biomarker</span> <span className="text-[#b4b8c0]">Discovery</span> <span className="text-[#33acfe]">Pipeline</span></h1>
-            <p className="text-xl py-4">The Digital Biomarker Discovery Pipeline (DBDP) is an open source platform for the development of digital biomarkers.</p>
+            <p className="text-xl py-4">The DBDP is an open source platform for the development of digital biomarkers.</p>
             <div>
-                <a href="https://dbdp.org/opendbdp"> <button className="ml-4 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Open dbdp</button> </a> 
-                <a href="https://github.com/DigitalBiomarkerDiscoveryPipeline/DBDP"><button className="m-2 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">About</button></a>
+                <a href="/about"><button className="m-2 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Learn More</button></a>
             </div>
         </div>
         <div>
