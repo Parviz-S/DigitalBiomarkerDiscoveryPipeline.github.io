@@ -23,7 +23,7 @@ const Navbar = () => {
                     <li className='p-4'><a href="https://dbdp.org/dbdpED" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">dbdpED</a></li> */}
                     <li className='p-4'><a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a></li>
                     <li className='p-4'><a href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a></li>
-                    <li className='p-4'><a href="/news" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">News</a></li>
+                    <li className='p-4'><a href="/research" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Research</a></li>
                     <li className='p-4'><a href="/modules" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Modules</a></li>
                     <li className='p-4'><a href="/contribute" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contribute</a></li>
                     <a href="https://dbdp.org/opendbdp"> <button className="ml-4 bg-gradient-to-r from-[#6a00ff] to-[#00d8ff] py-3 px-7 rounded-3xl">Open dbdp</button> </a>  

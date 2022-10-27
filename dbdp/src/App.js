@@ -11,7 +11,7 @@ import ReadyToDiscover from './components/ReadyToDiscover';
 import OurTeam from './components/OurTeam';
 import Contributors from './components/Contributors';
 import Footer from './components/Footer';
-import News from './components/News';
+import Research from './components/Research';
 import Contribute from './components/Contribute';
 import { Route, Routes } from "react-router-dom";
 
@@ -42,9 +42,9 @@ function App() {
           </div>
         } />
 
-        <Route path="/news" element={
+        <Route path="/research" element={
           <div className='News'>
-            <News /> 
+            <Research /> 
           </div>
         } />
 
