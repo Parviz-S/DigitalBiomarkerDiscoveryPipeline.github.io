@@ -13,6 +13,8 @@ import Contributors from './components/Contributors';
 import Footer from './components/Footer';
 import Research from './components/Research';
 import Contribute from './components/Contribute';
+import Organizations from './components/Organizations';
+
 import { Route, Routes } from "react-router-dom";
 
 
@@ -26,6 +28,7 @@ function App() {
           <Route path="/" element={
           <div className='Home'>
             <Hero />
+            <Organizations />
             <About />
             <DhdrCard />
             <DocumentationSection />
