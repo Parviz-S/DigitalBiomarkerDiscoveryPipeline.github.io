@@ -33,7 +33,7 @@ const Organizations = () => {
                 logo={dbdpLogo}
                 url='https://dbdp.org/opendbdp'
                 title='Open DBDP'
-                description="Open DBDP is a partnership between Open mHealth and the Digital Biomarker Discovery Pipeline (DBDP). Combining Open mHealth's interoperable open data standard with the DBDP's platform for transforming that data into indicators of health outcomes will help accelerate research using mHealth and wearables data for digital biomarker discovery. This project is funded through the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation."
+                description="Open DBDP is a partnership between Open mHealth and the Digital Biomarker Discovery Pipeline (DBDP). Combining Open mHealth's interoperable open data standard with the DBDP's platform for transforming that data into indicators of health outcomes will help accelerate research using mHealth and wearables data for digital biomarker discovery."
                 />
             </div>
         </div>
